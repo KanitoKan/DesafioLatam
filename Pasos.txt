@@ -1,9 +1,0 @@
-- Para Subir archivos a GIT
-
-git add .
-git commit -m "mensaje"
-git push
-
--- Para Bajar
-
-git pull
