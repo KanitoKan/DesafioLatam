@@ -1,0 +1,53 @@
+html{
+    scroll-behavior: auto !important;
+}
+
+body{
+    background-color: black !important;
+}
+
+
+/* Navbar  */
+
+.navbar{ 
+    background-color: #06cdff;
+    position:fixed;
+    width: 100vw;
+    z-index: 1;
+    }
+
+
+/*Footer */
+
+#Footer{
+    background-color: #06cdff;
+}
+
+#Footer a{
+    color: white;
+    text-decoration: none;
+}    
+
+
+#Footer div:last-child h1:first-child{
+    font-family: "Oswlad";
+    font-weight: bold;
+}
+
+
+#Icono-Boton{
+    background-color: #06cdff;    
+}
+
+
+
+
+/*
+#Destacados img{
+    display: grid;
+    gap:1 rem;
+    grid-auto-rows: 22 rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,25rem ),1fr));
+}
+
+*/
