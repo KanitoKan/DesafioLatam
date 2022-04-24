@@ -4,256 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="assents/css/estilo.css">
-
-    <title>Viajes Chile</title>
 </head>
 
-<body id="Inicio">
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark db-darck text-white fixed-top">
         <div class="container">
-
-            <a class="navbar-brand" href="#"> <img src="assents/img/viajes.svg" top= "12px" left="119px" width="132px" height="53px" >Viajes Chile </a>
-
+            <a class="navbar-brand" href="#"><Ri:a>Ricomida</Ri:a></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#Inicio">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Quienes_Somos">¿Quienes somos?</a>
-                  </li>
-                    <li class="nav-item">
-                  <a class="nav-link" href="#Destacados">Destacados</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Contacto">Contacto</a>
-                </li>
-            </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" href="#Inicio">Inicio</a>
+                        <a class="nav-link" href="#Receta">Receta</a>
+                        <a class="nav-link" href="#Nosotros">Nosotros</a>
+                        <a class="nav-link" href="#Contacto">Contacto</a>
+                    </ul>
             </div>
         </div>
     </nav>
   
-    <section Id="Carrusel">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assents/img/carousel1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assents/img/carousel2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assents/img/carousel3.jpg" class="d-block w-100" alt="...">
-            </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
+    <main class="container">
+        <header class="header_class my-3 border-top border-dark mx-4 pt-5">  
+            <div class="row pt-5">
+                <div class="col-xs-12 col-lg-6"> 
+                    <img src="assents/img/principal.jpg" alt="pizza" class="img-fluid">
+                </div>
 
-<section id="Quienes_Somos" class="pt-5 container d-none d-sm-block text-white">
-
-    <div>
-        <h1 class="fw-bold text-center text-uppercase pt-5 mb-5 text-white">¿Quienes Somos?</h1>
-    </div>
-
-    <div class="row pt-3">
-
-        <div class="Icono-Boton col-4"> 
-            <div class="Iconos text-center">
-                <i class="fas fa-plane" ></i>
+                <div class="col-xs-12 col-lg-6 header_texto pt-5"> 
+                    <div>
+                        <h2 class="text-left font-weight-bold pizza">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h2>
+                        <hr class="opacity-100 w-100 mx-auto">
+                    </div>
+                
+                    <div class="text-center boder-top border-dark">
+                        <h5 class="text-center my-4"> 110 MIN / 6 A 8 PORCIONES</h5>
+                        <div class="header_botones">
+                            <button id="correo" data-toggle="tooltip" class="btn d-inline-blanck header_boton" title="Presiona para enviar a tu correo">Enviar por correo </button>
+                            <button id="favorito" data-toggle="tooltip" class="btn header_boton p-3 mr-3 d-inline-blanck" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quo minima, praesentium officiis neque nam harum quae pariatur illum? Perferendis provident voluptate saepe recusandae nemo vitae quam nisi quaerat quae!
+        </header>
+
+        <section class="seccion_carrusel my-5 d-none d-md-block mx-4 border-dark border-bottom pb-5 tamano" >
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner text-dark">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-1.png" class="img-fluid" alt="slider-1">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-2.png" class="img-fluid" alt="slider-2">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-3.png" class="img-fluid" alt="slider-3">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-4.png" class="img-fluid" alt="slider-4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item text-dark">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-5.png" class="img-fluid" alt="slider-5">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-6.png" class="img-fluid" alt="slider-6">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-7.png" class="img-fluid" alt="slider-7">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3"> 
+                                <img src="assents/img/slider-8.png" class="img-fluid" alt="slider-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="selection_ingre_prepa">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6 seccion_ingredientes">
+                    <h4 class="pt-5">INGREDIENTES</h4>
+                    <p class="py-4">Masa</p>
+                    <ul class="pl-0"> 
+                        <li>20 gr de levadura seca instántamea</li>
+                        <li>1 cucharadita de azúcar 500 ml agua tibia</li> 
+                        <li>100 ml aceite vegetal</li>
+                        <li>4 cucharadas de aceite de oliva</li>
+                        <li>65 gr harina de maíz fina (chuchoca)</li> 
+                        <li>2 cucharaditas de sal 625 gr harina</li>
+                    </ul>
+                        <p>Salsa</p>
+                        <ul class="pl-0 pt-2">                        
+                            <li>5 cucharadas de aceite de oliva</li>
+                            <li>½ cebolla picada en cubos finos</li> 
+                            <li>2 cucharaditas de sal</li>
+                            <li>3 cucharadas de Orégano Gourmet</li>
+                            <li>1 ½ cucharadas de Albahaca Gourmet</li>
+                            <li>2 tarro de tomates en cubos al natural</li>
+                            <li>2 cucharaditas de azúcar Relleno ½ cebolla, en cubos</li>
+                            <li>500 gr hojas de espinacas picadas</li>
+                            <li>400 gr de champiñones, laminados</li>
+                            <li>300 gr de queso mozarella.</li>
+                            <li>4 cucharadas queso parmesano</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <h4 class="py-4"> PREPARACION</h4>
+                        <P class="pt-2">1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</P>
+                        <P class="pt-2">2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</P>
+                        <P class="pt-2">3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</P>
+                        <P class="pt-2">4. Calentar el horno a 220C.</P>
+                        <P class="pt-2">5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</P>
+                        <P class="pt-2">6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <hr class="opacity-100 w-100 mx-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4 my-4">
+                        <div class="card border-0">
+                            <img src="assents/img/recipe-card-1.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+                                <p class="card-text fw-light">
+                                    Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4 my-4">
+                        <div class="card border-0">
+                            <img src="assents/img/recipe-card-2.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">TIRAMISÚ</h5>
+                                <p class="card-text fw-light">
+                                    Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4 my-4">
+                        <div class="card border-0">
+                            <img src="assents/img/recipe-card-3.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">PLATEADA</h5>
+                                <p class="card-text">
+                                    Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion_newlatter container-fluid db-danger text-center text-white py-4">
+            <h1 class="pt-3">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
+            <p class="font-weight-lighter mx-4 pt-3">y obtén las mejores recetas que tenemos en
+                 <span style="font-family:Lobster;"> Ricomida</span>
             </p>
+            <button type="button" class="btn btn-outline-light col-md-3">Empezar</button>
+         </section>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quo minima, praesentium officiis neque nam harum quae pariatur illum? Perferendis provident voluptate saepe recusandae nemo vitae quam nisi quaerat quae!
-            </p>
-            </div>
+        <footer class="bg-dark p-3">
+            <h2 class="text-white text-center">Ricomida</h2>
+        </footer>
 
-        <div class="col-4"> 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident nam at reprehenderit doloremque blanditiis accusamus totam? Tempora numquam quo ad, soluta facere non repellat modi, quidem error, placeat perferendis.
-          </p>
+    </main>
 
-            <div class="Iconos text-center">
-                <i class="fas fa-mountain"></i>
-            </div>
-        </div>
-
-        <div class="col-4"> 
-            <div class="Iconos text-center">
-                <i class="fas fa-route"></i>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident nam at reprehenderit doloremque blanditiis accusamus totam? Tempora numquam quo ad, soluta facere non repellat modi, quidem error, placeat perferendis.
-            </p>
-          </div>
-  
-    </div>
-  </section>
-
-
-
-<section id="Destacados" class="py-5">
-    <div>
-        <h1 class="fw-bold text-center text-uppercase mt-2 mb-5 text-white">Destacados</h1>
-    </div>
-
-    <div class="container">
-        <div class="row">
-
-            <div class="col-12 col-sm-3 my-3">
-                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img src="assents/img/card3.jpg" class="card-img-top">
-                  <div class="card-body">
-                      <h4 class="card-title">Norte</h4>
-                      <p class="card-text fw-light">
-                        Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.
-                      </p>
-                  </div>
-                </div>
-              </div>
-
-            <div class="col-12 col-sm-3 my-3">  
-                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img src="assents/img/card2.jpg" class="card-img-top">
-                  <div class="card-body">
-                      <h4 class="card-title">Zona central</h4>
-                      <p class="card-text fw-light">
-                        Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.
-                      </p>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-12 col-sm-3 my-3">
-                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img src="assents/img/card4.jpg" class="card-img-top">
-                  <div class="card-body">
-                      <h4 class="card-title">Patagonia</h4>
-                      <p class="card-text fw-light">
-                        Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.
-                      </p>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-12 col-sm-3 my-3">
-                <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img src="assents/img/card1.jpg" class="card-img-top">
-                  <div class="card-body">
-                      <h4 class="card-title">Sur extremo</h4>
-                      <p class="card-text fw-light">
-                        Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.
-                      </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-    </div>
-</section>
-
-
-<section id="Contacto" class="container text-center py-5">
-    <div class="mb-5">
-        <h1 class="fw-bold text-uppercase text-white"> Contacto</h1>
-    </div>
-
-    <div class="input-group mb-3 fw-bold   mt-2 text-white">
-        <span class="input-group-text" >Nombre</span>
-        <input type="text" class="form-control" aria-label="Nombre" aria-describedby="basic-addon1">
-    </div>
-
-    <div class="input-group mb-3 fw-bold   mt-2 text-white">
-        <span class="input-group-text">Asunto</span>
-        <input type="text" class="form-control" aria-label="Asunto" aria-describedby="basic-addon1">
-    </div>
-
-    <div class="input-group mb-5">
-        <span class="input-group-text" with:100>Mensaje</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-    </div>
-
-
-    <div class="row">
-        <div class="col-1">
-            <input type="radio" class="btn-check" name="btnradio"  autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btnradio1" data-toggle="tooltip" data-placement="top" title="Enviar correo">Enviar</label>
-        </div>
-    </div>
-
-
-</section>
-
-    <footer id="Footer" class="text-center text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6">
-            <h1 class="fw-bold text-uppercase">viajes chile</h1>
-          </div>
-
-          <div class="col-12 col-sm-6">
-            <a href="#">
-            <i class="fab fa-github fa-2x mx-2"></i>
-            </a>
-            <a href="#">
-            <i class="fab fa-linkedin fa-2x mx-2"></i>
-            </a>
-            <a href="#">
-            <i class="fab fa-twitter-square fa-2x mx-2"></i>
-            </a>
-            <a href="#">
-            <i class="fab fa-facebook-f fa-2x mx-2"></i>
-            </a>
-          </div>
-      </div>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Titulo del Modal</h5>
-          </div>
-          <div class="modal-body">
-            <p> Desafio Portafolio Latam</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-   
-    <script src="assents/js/script.js"></script>
-
-  </body>
+    <link  rel="stylesheet" href="assents/js/script.js">
+    <script 
+        src='assents/js/script.js' > 
+    </script>
+</body>
 </html>
