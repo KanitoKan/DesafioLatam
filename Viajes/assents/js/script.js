@@ -8,7 +8,17 @@ $(document).ready(function(){
             800
         )
     })
+
+    $('#correo').click(function () {
+        alert("El correo fue enviado correctamente...")
+    });
 })
+
+
+/*
+ Modal 
+Se activa en las tarjetas de  sección de destacados 
+*/
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
